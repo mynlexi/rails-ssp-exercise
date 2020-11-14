@@ -1,0 +1,10 @@
+<%= link_to "Back to Overview", user_trainingsplans_path, class: "btn btn-light" %>
+
+<ul style="list-style-type: none;">
+
+  <li>
+    <%= @trainingsplan.name %> for  
+    <%= @trainingsplan.goal %> 
+    <%= link_to "Edit Trainingsplan", edit_user_trainingsplan_path  %>
+  </li>
+</ul>

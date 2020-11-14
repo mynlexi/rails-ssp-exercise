@@ -1,0 +1,13 @@
+<h2>List of Trainingsplans</h2> <%= link_to "Back to User", user_path(@user), class: "btn btn-primary"  %>
+<ul style="list-style-type: none;">
+
+<% @trainingsplans.each do |trainingsplan| %>
+  <li>
+    <%= trainingsplan.name %> for  
+    <%= trainingsplan.goal %> 
+    <%#  %><%= link_to "Edit Trainingsplan", edit_user_trainingsplan_path(trainingsplan[:id])  %>%>
+  </li>
+  <% end  %>
+</ul>
+
+<%= link_to "New Trainingsplan", new_user_trainingsplan_path, class: "btn btn-primary" %>
